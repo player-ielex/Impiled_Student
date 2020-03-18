@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/worksbg">
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/viocir" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-34dp"
+        android:layout_marginEnd="-3dp"
+        android:src="@drawable/yellowcorner" />
+
+    <ImageView
+        android:layout_width="73dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/greencir" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="78dp"
+        android:layout_toEndOf="@+id/dis"
+        android:src="@drawable/skycir" />
+
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Discover"
+        android:textColor="@color/white"
+        android:textSize="62dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dis"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="-11dp"
+        android:text="@string/book"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/category"
+        android:layout_marginTop="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="275dp"
+        app:rippleColor="@color/pink_impiled"
+        android:layout_marginTop="560dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/white" />
+
+</RelativeLayout>

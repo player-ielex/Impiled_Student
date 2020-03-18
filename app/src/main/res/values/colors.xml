@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#D81B60</color>
+    <color name="colorAccent">#00574B</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFF</color>
+
+    <color name="home">#5B37B7</color>
+    <color name="like">#C9379D</color>
+    <color name="search">#E6A919</color>
+    <color name="profile">#1194AA</color>
+
+    <color name="newblue">#010a43</color>
+
+    <color name="bulitenyellow">#eafc00</color>
+    <color name="bulitenblue">#170c5a</color>
+    <color name="bulitendarkblue">#000932</color>
+
+    <color name="rewardsback">#ff2d65</color>
+
+    <color name="worksbg">#d203da</color>
+
+    <color name="goalsbg">#ff750f</color>
+
+    <color name="pink_impiled">#FF4C5F</color>
+
+    <color name="profilebg">#FF6F69</color>
+</resources>

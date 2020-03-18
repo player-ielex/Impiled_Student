@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="180dp"
+    android:background="@drawable/bullitecard"
+    android:layout_width="match_parent"
+    android:layout_marginTop="18dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="55dp"
+                android:fontFamily="sans-serif-black"
+                android:maxLines="1"
+                android:text="Announcement Here"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/what"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="88dp"
+                android:maxLines="3"
+                android:paddingTop="5dp"
+                android:text="Descirption Here"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/bulitenyellow"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="30dp"
+        android:textColor="@color/bulitenblue"
+        android:paddingTop="4dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="4dp"
+        android:text="January 3, 2019" />
+
+</RelativeLayout>

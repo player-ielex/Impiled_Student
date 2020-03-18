@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_corner"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/bulitenblue"
+            app:bt_icon="@drawable/home2"
+            android:background="@color/bulitenblue"
+            app:bt_shapeColor="@color/bulitenblue"
+            app:bt_shape="@drawable/shape"
+            app:bt_padding="15dp"
+            app:bt_title="News"
+            app:bt_titlePadding="10dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/rewards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/shape"
+            app:bt_active="true"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/rewardsback"
+            app:bt_icon="@drawable/gift2"
+            app:bt_shapeColor="@color/rewardsback"
+            app:bt_padding="15dp"
+            app:bt_title="Rewards"
+            app:bt_titlePadding="10dp" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/writings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/shape"
+            app:bt_active="true"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/worksbg"
+            app:bt_icon="@drawable/write"
+            app:bt_shapeColor="@color/worksbg"
+            app:bt_padding="15dp"
+            app:bt_title="Works"
+            app:bt_titlePadding="4dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/shape"
+            app:bt_active="true"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/goalsbg"
+            app:bt_icon="@drawable/shop3"
+            app:bt_shapeColor="@color/goalsbg"
+            app:bt_padding="15dp"
+            app:bt_title="Goals"
+            app:bt_titlePadding="10dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/shape"
+            app:bt_active="true"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/profilebg"
+            app:bt_icon="@drawable/user3"
+            app:bt_shapeColor="@color/profilebg"
+            app:bt_padding="15dp"
+            app:bt_title="Profile"
+            app:bt_titlePadding="10dp" />
+
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

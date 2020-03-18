@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleWorksCategory"
+    android:background="@color/worksbg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="43dp"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="-4dp"
+        android:src="@drawable/yellowcorner" />
+
+
+    <ImageView
+        android:id="@+id/backers"
+        android:layout_width="201dp"
+        android:layout_height="174dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-7dp"
+        android:src="@drawable/pinkishcorner" />
+
+    <ImageView
+
+        android:layout_width="118dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="-16dp"
+        android:src="@drawable/greencir" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-62dp"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/skycir" />
+
+    <ImageView
+        android:layout_width="57dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="-14dp"
+        android:src="@drawable/viocir" />
+
+    <TextView
+        android:id="@+id/works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Works Category"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="95dp"/>
+
+    <TextView
+        android:id="@+id/catworks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="109dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Works Category"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewWorks"
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:layout_below="@+id/catworks"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

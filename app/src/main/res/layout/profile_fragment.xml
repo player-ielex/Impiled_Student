@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profilebg">
+
+    <ImageView
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-67dp"
+        android:layout_marginEnd="-81dp"
+        android:src="@drawable/yellowcent" />
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="-29dp"
+        android:src="@drawable/bluecen" />
+
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="90dp"
+        android:src="@drawable/skycir" />
+
+    <TextView
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="65sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-7dp"
+        android:text="Simple Information about yourself and the app itself"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture"
+        android:layout_width="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:elevation="300dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="55dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:elevation="300dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Paul Barientos"
+            android:textColor="@color/profilebg"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="43dp"
+            android:text="Grade 10 Orion"
+            android:textColor="@color/profilebg" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/workz"
+        android:layout_width="145dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/info"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="55dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="My Works"
+            android:textColor="@color/profilebg" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/versionz"
+        android:layout_width="145dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/workz"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="55dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="Impiled Version"
+            android:textColor="@color/profilebg" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/terms"
+        android:layout_width="145dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/info"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="55dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/terms"
+            android:layout_gravity="center"
+
+            android:fontFamily="sans-serif-black"
+            android:text="Terms and Condition"
+            android:textColor="@color/profilebg" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logout"
+        android:layout_width="145dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/terms"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="55dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/terms"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="Logout"
+
+            android:textColor="@color/profilebg" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

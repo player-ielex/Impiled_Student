@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.impiled_students">
+
+    <application
+        android:name=".ImpiledStudent"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UpdateOwnWorks"></activity>
+        <activity android:name=".SingleOwnWorks" />
+        <activity android:name=".SingleGoals" />
+        <activity android:name=".Version" />
+        <activity android:name=".TermsandAgree" />
+        <activity android:name=".OwnWorks" />
+        <activity android:name=".AddWorks" />
+        <activity android:name=".SingleWorksCategory" />
+        <activity android:name=".SingleRewardsCategory" />
+        <activity android:name=".SingleBulletin" />
+        <activity android:name=".SingleWorks" />
+        <activity android:name=".SingleRewards" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

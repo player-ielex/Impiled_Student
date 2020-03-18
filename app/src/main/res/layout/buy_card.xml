@@ -1,0 +1,99 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="400dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/itname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Minnie Yoon" />
+
+        <ImageView
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/seller_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            android:text="Logo Sticker"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/descrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="268dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="True wireless earphone for your every run, with JBL technology and sound."/>
+
+        <ImageView
+            android:id="@+id/icon_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science Laboratory Building"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="330dp"/>
+
+        <ImageView
+            android:id="@+id/icon_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="363dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="358dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

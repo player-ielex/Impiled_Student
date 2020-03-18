@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Impiled Students</string>
+    <string name="project_description"> An ICT 2A Application Project For this Second Semester</string>
+
+    <string name="book">Read, Learn and Be Motivate to the books you read</string>
+    <string name="bulletin">Be Updated to the Announcement inside your school</string>
+    <string name="rewards">Look and Be Motivated to the rewards </string>
+
+    <string name="terms">
+        Welcome to our system. If you continue to browse and use this system, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Impiled’s relationship with you in relation to this system. If you disagree with any part of these terms and conditions, please do not use our system.
+        The content of the pages of this website is for your general information and use only. It is subject to change without notice.
+        Anyone who violates in getting the reward is punishable by removing the account
+        If it is worst senario you can be put in the prison
+        No one must harm each other when getting this rewards
+        and always love others
+    </string>
+</resources>

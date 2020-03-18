@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddWorks"
+    android:background="@color/profilebg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="43dp"
+                android:elevation="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/kers"
+                android:layout_width="190dp"
+                android:layout_height="174dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/pinkishcorner" />
+
+            <ImageView
+                android:layout_width="171dp"
+                android:layout_height="153dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/yellowcorner" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="71dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="52dp"
+                android:src="@drawable/skycir" />
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="193dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/greencir" />
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="120dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Update Works"
+                android:textColor="@color/white"
+                android:textSize="43dp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="-5dp"
+                android:text="Update or change the parts of your works"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fill"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/desc"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/profilebg"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Title"/>
+
+                    <EditText
+                        android:id="@+id/title_works"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/profilebg"
+                        android:hint="Title of Works"
+                        android:textColor="@color/white"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/white"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:paddingLeft="20dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Category"
+                        android:textSize="18sp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/profilebg" />
+
+
+                    <Spinner
+                        android:id="@+id/ca"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/profilebg" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/love"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/fill"
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="50dp"
+                app:cardCornerRadius="10dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/content_works"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:background="@color/profilebg"
+                        android:gravity="top"
+                        android:hint="Share love"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/white"
+                        android:paddingBottom="26dp"
+                        android:textColorHint="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/love"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="140dp">
+
+                <Button
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/love"
+                    android:background="@color/white"
+                    android:text="Update"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/profilebg"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
